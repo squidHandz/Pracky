@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+
+ __                                          ____                           ___                         
+/\ \                                        /\  _`\                   __  /'___\                        
+\ \ \         __     _ __   _ __   __  __   \ \ \L\ \    ___     ___ /\_\/\ \__/   __      ___     __   
+ \ \ \  __  /'__`\  /\`'__\/\`'__\/\ \/\ \   \ \  _ <'  / __`\ /' _ `\/\ \ \ ,__\/'__`\   /'___\ /'__`\ 
+  \ \ \L\ \/\ \L\.\_\ \ \/ \ \ \/ \ \ \_\ \   \ \ \L\ \/\ \L\ \/\ \/\ \ \ \ \ \_/\ \L\.\_/\ \__//\  __/ 
+   \ \____/\ \__/.\_\\ \_\  \ \_\  \/`____ \   \ \____/\ \____/\ \_\ \_\ \_\ \_\\ \__/.\_\ \____\ \____\
+    \/___/  \/__/\/_/ \/_/   \/_/   `/___/> \   \/___/  \/___/  \/_/\/_/\/_/\/_/ \/__/\/_/\/____/\/____/
+                                       /\___/                                                           
+                                       \/__/                                                            
+-->
+<html ng-app="myApp">
+<head>
+<!--Meta -->
+  <meta charset="utf-8">
+<base href="/" />
+  <meta name="viewport" content="width=device-width">
+
+  <title>Larry Boniface</title>
+
+  <!-- SCROLLS -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" >
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" >
+<link href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.0.7/ui-grid.min.css" rel="stylesheet" >
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- SPELLS -->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+<script type="text/javascript" src= "//cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.0.7/ui-grid.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-animate.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+
+
+  <!-- ANGULAR CUSTOM -->
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/services/dfsSvc.js"></script>
+<script type="text/javascript" src="js/services/todoSvc.js"></script>
+<script type="text/javascript" src="js/controllers/excelCtrl.js"></script>
+<script type="text/javascript" src="js/controllers/dfsCtrl.js"></script>
+<script type="text/javascript" src="js/controllers/todoCtrl.js"></script>
+<script type="text/javascript" src="js/controllers/mainCtrl.js"></script>
+<script type="text/javascript" src="js/2.2/sheetjs.all.min.js"></script>
+<script type="text/javascript" src="js/2.2/excelplus-2.2.min.js"></script>
+
+
+
+</head>
+
+
+<!-- SET THE CONTROLLER -->
+<body ng-controller="mainCtrl">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" ui-sref="/" />LB</a>
+        <ul class="nav navbar-nav nav-pills">
+          <li><a ui-sref="excel">Excel Plus</a></li>
+          <li><a ui-sref="todo">ToDo</a></li>
+          <li><a ui-sref="dfs">Daily Fantasy</a></li>
+      </div>
+    
+
+  </nav>
+
+
+
+
+<div ui-view></div>
+  
+
+
+</body>
+
+</html>

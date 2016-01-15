@@ -1,0 +1,23 @@
+{
+  "name": "squidapp",
+  "version": "0.0.1",
+  "description": "Game DFS",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "latest",
+    "method-override": "^2.3.5",
+    "mongodb": "^2.1.2",
+    "mongoose": "latest",
+    "morgan": "latest",
+    "request": "latest", 
+    "cheerio": "latest",
+    "lodash": "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "squidHandz",
+  "license": "MIT"
+}
