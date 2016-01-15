@@ -2,7 +2,7 @@ var mongoose = require('mongoose'),
 	Schema = mongoose.Schema,
 	model = module.exports;
 	
-var uristring = 'mongodb://test:test@apollo.modulusmongo.net:27017/eMaxa9py';
+var uristring = 'mongodb://<***>:<***>@apollo.modulusmongo.net:27017/eMaxa9py';
 // Makes connection asynchronously. Mongoose will queue up database
 // operations and release them when the connection is complete.
 mongoose.connect(uristring, function (err, res) {
